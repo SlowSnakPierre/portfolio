@@ -231,7 +231,7 @@ span {
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
-    height: 45vh;
+    height: 45rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -239,7 +239,7 @@ span {
 }
 
 .services-box .btn {
-    max-width: 15vw;
+    max-width: 25rem;
 }
 
 .services-box:hover {

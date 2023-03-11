@@ -45,7 +45,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Développeur FullStack', 'Streamer'],
+    strings: ['Développeur FullStack', 'Streamer', 'YouTubeur'],
     typeSpeed: 75,
     backSpeed: 75,
     backDelay: 1500,
