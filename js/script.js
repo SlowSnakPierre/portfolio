@@ -51,3 +51,14 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1500,
     loop: true
 })
+
+const form = document.getElementById('contactform');
+form.addEventListener('submit', function(e) {
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Veuillez compléter le Captcha");
+        return;
+    }
+});

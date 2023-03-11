@@ -220,6 +220,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    
     margin-bottom: 3rem;
 }
 
@@ -421,6 +422,7 @@ span {
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
+        width: 100vw;
     }
 
     section {
@@ -444,6 +446,10 @@ span {
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -453,7 +459,7 @@ span {
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 100vw;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
@@ -518,6 +524,15 @@ span {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -537,15 +552,6 @@ span {
     
     .about-img img {
         width: 90vw;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
     }
 }
 

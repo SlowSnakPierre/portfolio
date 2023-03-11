@@ -57,7 +57,7 @@
             <h2 class="heading">A Propos De <span>Moi</span></h2>
             <h3>Développeur FullStack</h3>
             <p>Développeur FullStack dévoué à créer des applications web performantes et conviviales pour mes clients.<br><br>J'aime travailler sur les défis techniques et chercher des solutions créatives pour répondre aux besoins de mes clients.<br><br>Mon expérience en développement web me permet de travailler à la fois sur le front-end et le back-end, et de créer des solutions web personnalisées pour répondre aux exigences spécifiques de chaque projet.</p>
-            <a href="#" class="btn">En savoir plus</a>
+            <a href="#contact" class="btn">Pendre un RDV</a>
         </div>
     </section>
 
@@ -70,35 +70,42 @@
                 <i class="bx bx-palette"></i>
                 <h3>Design</h3>
                 <p>Le rendu graphique est très important et véhicule les valeurs de votre projet. Ne le laissez pas de côté, et démarquez-vous de vos concurrents grâce à un design original, qui vous ressemble.</p>
-                <a href="#" class="btn">En savoir plus</a>
+                <a href="#contact" class="btn">Pendre un RDV</a>
             </div>
 
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
                 <h3>Développement de site web</h3>
                 <p>Pour une mise à jour ou une création complète, je vous accompagne dans votre projet de site internet. Vous pourrez ainsi développer votre business grâce à une réelle présence en ligne.</p>
-                <a href="#" class="btn">En savoir plus</a>
+                <a href="#contact" class="btn">Pendre un RDV</a>
             </div>
 
             <div class="services-box">
                 <i class="bx bx-plus"></i>
                 <h3>Ajout de fonctionnalités</h3>
                 <p>Vous souhaitez ajouter des fonctionnalités sur votre site ?<br>Voici une petite liste d'exemples :<br>• Connexion à une API<br>• Changement de fonctionnement<br>• Creation d'une page</p>
-                <a href="#" class="btn">En savoir plus</a>
+                <a href="#contact" class="btn">Pendre un RDV</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-pen"></i>
+                <h3>Modifications</h3>
+                <p>Pour des modifications de police d'écriture, des couleurs ou encore des fonctionnalités sur votre site.</p>
+                <a href="#contact" class="btn">Pendre un RDV</a>
             </div>
 
             <div class="services-box">
                 <i class="bx bx-cog"></i>
                 <h3>Maintenance</h3>
                 <p>Prise en charge des mises à jour et rectifications des problèmes de compatibilité, de sécurité ou optimisation de site web.</p>
-                <a href="#" class="btn">En savoir plus</a>
+                <a href="#contact" class="btn">Pendre un RDV</a>
             </div>
 
             <div class="services-box">
                 <i class="bx bx-cube"></i>
                 <h3>Création de contenu Roblox</h3>
                 <p>Ce Service propose plusieurs sous-services:<br>• Création de jeu<br>• Création de contenu/fonctionnalités<br>• Optimisation</p>
-                <a href="#" class="btn">En savoir plus</a>
+                <a href="#contact" class="btn">Pendre un RDV</a>
             </div>
         </div>
     </section>
@@ -168,16 +175,21 @@
     <section class="contact" id="contact">
         <h2 class="heading">Me <span>Contacter</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactform">
+            <input type="hidden" name="access_key" value="b1b69246-3b38-4199-a7ab-b8569e875119">
             <div class="input-box">
-                <input type="text" placeholder="Nom et prénom">
-                <input type="email" placeholder="Adresse e-mail">
+                <input type="text" name="name" placeholder="Nom et prénom" required>
+                <input type="email" name="email" placeholder="Adresse e-mail" required>
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Téléphone">
-                <input type="text" placeholder="Sujet de l'Email">
+                <input type="number" name="phone" placeholder="Téléphone" required>
+                <input type="text" name="subject" placeholder="Sujet de l'Email" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Votre message" required></textarea>
+            
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
             <input type="submit" value="Envoyer le Message" class="btn">
         </form>
     </section>
@@ -201,6 +213,9 @@
 
     <!-- No DevTools -->
     <!-- <script src="https://dunggramer.github.io/disable-devtool/disable-devtool.min.js" defer></script> -->
+
+    <!-- Captcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <!-- js -->
     <script src="./js/script.js"></script>
